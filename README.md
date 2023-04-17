@@ -37,3 +37,7 @@ Difficulty: Hard
 Description: The Terminator told you to put the cookie down, and you didn't listen. Now he is very angry! You must find a way to steal the cookie from the vulnerable website and send it to the evil server where the Terminator is waiting... just don't make him wait too long.
 
 Hint: No hints ^o^
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+[Solutions](./Solutions/) (NO PEEKING!)

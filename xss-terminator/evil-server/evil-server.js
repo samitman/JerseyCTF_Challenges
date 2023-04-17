@@ -39,7 +39,7 @@ app.get('/', function(req, res, next) {
 	} else {
 		res.send(`<html><head><title>Evil Server</title>
 		<style>body {background-color:#282828; color:gainsboro; padding-top:30px; margin-left:30px;}</style></head>
-		<p>Steal the cookie and send it to my /cookie?data endpooint </p> 
+		<p>Steal the cookie and send it to my /cookie?data endpoint </p> 
 		<p>Once you do, refresh the page to find the flag ;)</p>`);
 	}
 });

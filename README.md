@@ -1,5 +1,4 @@
 # JerseyCTF_Challenges
-My web-based challenges for JerseyCTF 3
 
 Challenge 1: [put-the-cookie-down](./put-the-cookie-down/)
 

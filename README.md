@@ -9,6 +9,8 @@ Description: The Terminator has sent you a frantic message from 1996, maybe it's
 
 Hint: There is far more to DevTools than inspect element.
 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Challenge 2: [timeless](./timeless/)
 
 Difficulty: Easy
@@ -17,6 +19,8 @@ Description: You've stumbled upon a lost message archive, maybe there are some c
 
 Hint: You don't have an account for this website, but maybe there is a way to trick the database into letting you in.
 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Challenge 3: [i-got-the-keys](./i-got-the-keys/)
 
 Difficulty: Medium
@@ -24,6 +28,8 @@ Difficulty: Medium
 Description: Our receivers are picking up some intergalactic communication from a galaxy light years away. This could be the major key we've been looking for!
 
 Hint: Why don't you go ahead and FETCH the FLAG for me?
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Challenge 4: [xss-terminator](./xss-terminator/)
 

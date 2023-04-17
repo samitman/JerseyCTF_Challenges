@@ -1,0 +1,14 @@
+{
+  "name": "evil-server",
+  "version": "1.0.0",
+  "description": "Evil server for XSS exploits",
+  "main": "evil-server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sam",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

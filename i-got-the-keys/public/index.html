@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jersey CTF</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <script>
+    var endpoint = 'test'
+    fetch('http://localhost:3000/'+endpoint, {
+      headers: {
+        'authorization_key': 'GdERHpBh3x'
+      }
+    })
+      .then(response => response.json())
+      .then(data => {
+        console.log(data);
+        document.getElementById("api-response").innerHTML = JSON.stringify(data[endpoint]);
+    })
+    .catch(error => console.error(error));
+  </script>
+  <body>
+    <div class="background-overlay"></div>
+    <header>
+      <nav>
+        <a href="./index.html" class="active">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./contact.html">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <h1>Welcome to JerseyCTF</h1>
+      <p>You have received a message from: DJ Khaled</p>
+      <p>Date: 7/16/2086</p>
+      <img style="height:16em; margin-bottom:10px;" src="https://media3.giphy.com/media/26BREWCvD66KImhc4/giphy.gif"/>
+      <div>Intergalactic Connection Status: 
+        <span id="api-response"></span>
+      </div>
+    </main>
+    <footer>
+      <p>Copyright © 2023 JCTF</p>
+    </footer>
+  </body>
+</html>

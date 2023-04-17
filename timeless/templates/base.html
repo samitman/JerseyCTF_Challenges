@@ -1,0 +1,36 @@
+<head>
+    <title>{% block title %} {% endblock %} - Jersey CTF</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="background-overlay"></div>
+    <header>
+        <nav>
+            <span class="navbar-text">
+                {% if session["user"] is none %}
+                <span class="fst-italic">Not logged in</span>
+                
+                <a href="{{ url_for('login') }}">Login</a>
+                {% else %}
+                <span class="fst-italic">Logged in as:</span>
+                {{ session["user"] }}
+                
+                <a href="{{ url_for('logout') }}">Logout</a>
+                {% endif %}
+            </span>
+        </nav>
+    </header>
+</body>
+<div class="content">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for category, message in messages %}
+            <div style="color:#ffbb00;" class="alert alert-{{ category }}" role="alert">{{ message }}</div>
+            {% endfor %}
+        {% endif %}
+        {% endwith %}
+    {% block content %} {% endblock %}
+</div>
+<footer>
+    <p>Copyright © 2023 JCTF</p>
+</footer>

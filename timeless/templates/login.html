@@ -1,0 +1,27 @@
+<h1>Login</h1>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/login_styles.css') }}">
+
+<form method="post">
+    <div class="imgcontainer">
+        <img src="{{ url_for('static', filename='images/avatar.png') }}" alt="Avatar" class="avatar">
+      </div>
+      <div style="text-align: center; color:#ffbb00;">
+        {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for category, message in messages %}
+            <div class="alert alert-{{ category }}" role="alert">{{ message }}</div>
+            {% endfor %}
+        {% endif %}
+        {% endwith %}
+      </div>
+    
+      <div class="container">
+        <label for="username"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="username" required>
+    
+        <label for="password"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="password" required>
+            
+        <button type="submit" onclick="this.disabled=true;this.value='Submitting...'; this.form.submit();">Login</button>
+      </div>
+</form>
